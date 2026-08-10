@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>999 FOUNDERS · 프랜차이즈 컨설턴트 창업 플랫폼</title>
-<script>(function(){try{var t=localStorage.getItem('f999_theme');if(t!=='light'&&t!=='dark')t='dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+<script>(function(){try{var t=localStorage.getItem('f999_theme');if(t!=='light'&&t!=='dark')t='light';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();</script>
 <meta name="description" content="999 파운더스는 검증된 창업 아이템과 플랫폼, 창업 후 운영지원, 체계적 교육을 갖춘 프랜차이즈 컨설턴트 창업 플랫폼입니다. 창업의 99.9%는 우리가 준비했습니다." />
 <meta property="og:title" content="999 FOUNDERS · 프랜차이즈 컨설턴트 창업 플랫폼" />
 <meta property="og:description" content="창업의 99.9%는 우리가 준비했습니다. 당신은 마지막 0.1%만 채우세요." />
@@ -107,7 +107,7 @@
   .hero .veil{
     position:absolute;inset:0;z-index:1;
     background:
-      linear-gradient(180deg,rgba(11,14,20,.55) 0%,rgba(11,14,20,.15) 32%,rgba(11,14,20,.45) 62%,var(--ink) 100%),
+      linear-gradient(180deg,rgba(11,14,20,.55) 0%,rgba(11,14,20,.15) 32%,rgba(11,14,20,.5) 66%,#0b0e14 100%),
       radial-gradient(120% 80% at 50% 0%,transparent 40%,rgba(11,14,20,.5) 100%);
   }
   .hero-inner{position:relative;z-index:2;width:100%;padding-bottom:8vh}
@@ -145,7 +145,11 @@
   .play-btn:active{transform:scale(.95)}
   .play-btn .pi{width:28px;height:28px;border-radius:50%;background:linear-gradient(160deg,var(--gold-soft),var(--gold));display:grid;place-items:center;flex:none}
   .play-btn .pi svg{width:12px;height:12px;color:#0b0e14;margin-left:2px}
-  @media(max-width:640px){ .play-btn{right:50%;transform:translateX(50%);bottom:calc(8vh + 2px)} .play-btn:hover{transform:translateX(50%) translateY(-2px)} }
+  @media(max-width:640px){
+    .hero-inner{padding-bottom:104px}
+    .play-btn{right:50%;left:auto;transform:translateX(50%);bottom:20px}
+    .play-btn:hover{transform:translateX(50%) translateY(-2px)}
+  }
 
   /* 영상 크게보기 팝업 */
   .video-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(6,8,12,.94);backdrop-filter:blur(8px);padding:20px}
@@ -165,7 +169,8 @@
   html[data-theme="light"] .hero .lede{color:#dcd7ca}
   html[data-theme="light"] .hero .lede b{color:#fff}
   html[data-theme="light"] .hero .eyebrow{color:#eacf8f}
-  html[data-theme="light"] .hero .scrollhint{color:#c3c6ce}
+  html[data-theme="light"] .hero .scrollhint{color:#cfd2d8}
+  html[data-theme="light"] .hero .scrollhint i{background:linear-gradient(#eacf8f,transparent)}
 
   /* ---------- 공통 섹션 ---------- */
   section.block{padding:clamp(72px,11vw,132px) 0;position:relative}
