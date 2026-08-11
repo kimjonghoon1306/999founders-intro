@@ -320,11 +320,6 @@
   .head-anim{clip-path:inset(0 0 100% 0);transform:translateY(14px);transition:clip-path 1.05s cubic-bezier(.2,.7,.2,1),transform 1.05s cubic-bezier(.2,.7,.2,1)}
   .head-anim.in{clip-path:inset(0 0 0 0);transform:none}
 
-  /* 골드 밑줄 그어지기 (4) */
-  .head-line{padding-bottom:10px}
-  .head-line::after{content:"";display:block;width:0;height:3px;margin-top:20px;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--gold-soft));transition:width .9s cubic-bezier(.2,.7,.2,1) .35s}
-  .head-line.in::after{width:66px}
-
   /* 순차 등장 스태거 (3) */
   .stagger > *{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
   .stagger.in > *{opacity:1;transform:none}
@@ -342,7 +337,6 @@
   @media(prefers-reduced-motion:reduce){
     .reveal{opacity:1;transform:none;transition:none}
     .head-anim{clip-path:none;transform:none;transition:none}
-    .head-line::after{width:64px;transition:none}
     .stagger > *{opacity:1;transform:none;transition:none}
     .btn-gold.shine::after,.btn-gold:hover::after{animation:none}
     .scrollhint i{animation:none}
@@ -391,7 +385,7 @@
     <div class="kicker">999 파운더스란</div>
     <div class="grid">
       <div>
-        <h2 class="head serif head-anim head-line">정직한 창업이,<br /><em>끝까지 함께</em> 갑니다</h2>
+        <h2 class="head serif head-anim">정직한 창업이,<br /><em>끝까지 함께</em> 갑니다</h2>
         <p class="sub"><b>999 파운더스</b>는 프랜차이즈 컨설턴트 창업을 돕는 창업 플랫폼입니다. 아이템 선정, 플랫폼, 운영, 교육 등 창업에 필요한 대부분을 회사가 미리 준비해 두었습니다. 창업자는 검증된 시스템 위에서 자신의 사업을 시작하고, 판권(사업권)을 가진 진짜 사업의 주인이 됩니다.</p>
         <p class="sub">거품 없이, 부풀리지 않고, 순도 <span class="gold">99.9</span>의 정직함으로 운영합니다.</p>
       </div>
@@ -412,7 +406,7 @@
 <section id="s-onestop" class="block onestop reveal">
   <div class="wrap">
     <div class="kicker">A to Z 원스톱 컨설팅</div>
-    <h2 class="head serif head-anim head-line">인테리어부터 활성화까지,<br />처음부터 끝까지 <em>원스톱</em></h2>
+    <h2 class="head serif head-anim">인테리어부터 활성화까지,<br />처음부터 끝까지 <em>원스톱</em></h2>
     <p class="sub">999 본사는 <b>프랜차이즈 인테리어부터 창업, 체계적인 교육, 그리고 프랜차이즈 활성화까지</b> — 창업의 A부터 Z까지 하나의 창구에서 책임지고 컨설팅합니다. 예비 창업주가 혼자 고민할 일을, 검증된 시스템으로 본사가 대신 준비합니다.</p>
 
     <div class="os-grid stagger">
@@ -480,7 +474,7 @@
   <div class="wrap">
     <div class="reveal">
       <div class="kicker">사업의 4가지 기둥</div>
-      <h2 class="head serif head-anim head-line">무엇을 <em>준비해 두었나</em></h2>
+      <h2 class="head serif head-anim">무엇을 <em>준비해 두었나</em></h2>
       <p class="sub">창업의 성패를 가르는 요소를 넷으로 나누어, 각각을 시스템으로 만들었습니다.</p>
     </div>
 
@@ -530,7 +524,7 @@
 <section id="s-journey" class="block journey reveal">
   <div class="wrap">
     <div class="kicker">창업의 여정</div>
-    <h2 class="head serif head-anim head-line">시작부터 <em>내 사업</em>이 되기까지</h2>
+    <h2 class="head serif head-anim">시작부터 <em>내 사업</em>이 되기까지</h2>
     <p class="sub">복잡한 절차 없이, 준비된 순서를 따라가면 됩니다.</p>
     <div class="steps stagger">
       <div class="step"><div class="no serif"></div><h4>창업 시작</h4><p>플랫폼에 가입하고 준비된 창업 아이템으로 사업을 시작합니다.</p></div>
@@ -545,7 +539,7 @@
 <section class="block trust reveal">
   <div class="wrap">
     <div class="kicker">왜 999 파운더스인가</div>
-    <h2 class="head serif head-anim head-line">준비는 우리가,<br /><em>시작은 당신이</em></h2>
+    <h2 class="head serif head-anim">준비는 우리가,<br /><em>시작은 당신이</em></h2>
     <div class="metrics stagger">
       <div class="metric"><b><span class="count" data-count="99.9" data-dec="1">0.0</span><i>%</i></b><span>창업에 필요한 준비를 회사가 미리 갖춰 둡니다. 당신은 실행에만 집중하면 됩니다.</span></div>
       <div class="metric"><b><span class="count" data-count="4" data-dec="0">0</span><i>기둥</i></b><span>검증된 아이템 · 운영지원 · 체계적 교육 · 정직한 관리. 창업의 핵심을 시스템화했습니다.</span></div>
